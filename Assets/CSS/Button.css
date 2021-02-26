@@ -1,0 +1,51 @@
+.button {
+     position: relative;
+     background: linear-gradient(-90deg, #004306, #1b0031, #004306);
+     background-size: 400% 100%;
+     text-transform: uppercase;
+     font-weight: 700;
+     border: none;
+     border-radius: 0.25em;
+     font-size: 16px;
+     letter-spacing: 1px;
+     padding: 0;
+     margin: 0;
+     animation: Gradient 40s ease infinite;
+     text-decoration: none;
+   }
+   
+.button div {
+     color: rgb(255, 255, 255);
+     min-height: 40px;
+     padding: 0 1.618em;
+     border-radius: inherit;
+     background-size: inherit;
+     background-image: inherit;
+     animation: Gradient 40s ease infinite;
+     position: relative;
+     z-index: 1;
+     mix-blend-mode: overlay;
+     font-family: 'DotGothic16';
+     
+   }
+   
+@keyframes Gradient {
+       50% {
+           background-position: 140% 50%;
+       transform: skew(-2deg);
+       }
+   }
+
+.button::after {
+     content: '';
+     position: absolute;
+     background-size: inherit;
+     background-image: inherit;
+     animation: inherit;
+     left: 0px;
+     right: 0px;
+     top: 2px;
+     height: 100%;
+     filter: blur(1rem);
+   }
+   

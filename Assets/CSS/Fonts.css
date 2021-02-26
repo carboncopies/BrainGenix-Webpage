@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "DotGothic16";
+    src: url("Assets/Fonts/DotGothic16-Regular.ttf") format("truetype");
+  }
+
+  div {
+    font-family: "DotGothic16";
+  }
