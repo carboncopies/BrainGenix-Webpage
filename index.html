@@ -3,33 +3,53 @@
 <html>
 
     <head>
-        <title>The BrainGenix Project</title>
-
-        <link rel="stylesheet" href="Assets/CSS/Fonts.css">
-        <link rel="stylesheet" href="Assets/CSS/Body.css">
-        <link rel="stylesheet" href="Assets/CSS/Button.css">
+        <title>Home - The BrainGenix Project</title>
+        
+        <!-- GOOGLE FONTS     -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- CSS              -->
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+        
+        <!-- START META INFO  -->
         <link rel="canonical" href="#" />
       	<meta property="og:locale" content="en_US" />
       	<meta property="og:type" content="website" />
       	<meta property="og:title" content="The BrainGenix Project" />
       	<meta property="og:url" content="#" />
       	<meta property="og:site_name" content="The BrainGenix Project" />
-        
+      	<!-- END META INFO    -->
+      	
+      	<!-- FONTAWESOME      -->
+      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     </head>
 
 
     <body>
-
-        <!--Menu goes at the top, and scrolls down with the page.-->
-
-
-        <div>
-            <a class="button" href="https://carboncopies.org">
-              <div>
-                A button (can't get the font to work right)
-              </div>
-            </a>
-          </div>
-        
+        <nav>
+          <a href="/" class="header-logo-link"><img src="Logo.png" class="header-logo" /></a>
+          <ul>
+            <li><a href="#">Install</a></li>
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Join Us!</a></li>
+          </ul>
+          <a href="#" target="_blank" class="facebook-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+          <a href="#" id="signin-link">Sign In</a>
+        </nav>
+        <div id="content">
+          <article>
+            <h2>Scalable, distributed neuron simulation system</h2>
+            <img src="Neurons.png" class="hero" />
+          </article>
+        </div>
+        <footer>
+          <script src="scripts.js"></script>
+        </footer>
     </body>
 </html>

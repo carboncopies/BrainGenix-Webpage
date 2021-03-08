@@ -1,0 +1,106 @@
+/* STYLE FOR BRAINGENIX PROJECT PAGE */
+
+/* GENERAL STYLING */
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  color: #008037;
+  text-transform: uppercase;
+}
+
+/* NAVBAR */
+body nav {
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  background-color: white;
+  user-select: none;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  text-align: right;
+  box-sizing: border-box;
+  border: 1px solid #008037;
+  border-width: 0 0 1px 0;
+  font-size: 24px;
+}
+
+body nav .header-logo-link {
+  position: absolute;
+  left: 15px;
+  top: 3px;
+}
+
+body nav .header-logo {
+  max-width: 150px;
+}
+
+body nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 18px;
+}
+
+body nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+body nav ul a {
+  color: #008037;
+  opacity: 1;
+  transition: 300ms;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+body nav a {
+  opacity: 1;
+  transition: 300ms;
+}
+
+body nav a:hover {
+  opacity: .8;
+  transition: 300ms;
+}
+
+body nav a.facebook-link {
+  color: #4267B2;
+  margin: 0 5px;
+}
+
+body nav a.github-link {
+  color: #000;
+  margin: 0 5px;
+}
+
+body nav ul a:hover {
+  opacity: .8;
+  transition: 300ms;
+}
+
+body nav a#signin-link {
+  background-color: #008037;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  margin-left: 21px;
+  text-transform: uppercase;
+}
+
+/* CONTENT */
+#content {
+  margin-top: 105px;
+}
+
+#content article {
+  max-width: 960px;
+  margin: 15px auto;
+}
+
+/* HERO SECTION */
+img.hero {
+  max-width: 100%;
+}
