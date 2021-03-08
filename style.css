@@ -28,9 +28,9 @@ body nav {
 }
 
 body nav .header-logo-link {
-  position: absolute;
-  left: 15px;
-  top: 3px;
+    position: absolute;
+    left: 15px;
+    top: 6px;
 }
 
 body nav .header-logo {
@@ -103,4 +103,26 @@ body nav a#signin-link {
 /* HERO SECTION */
 img.hero {
   max-width: 100%;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding: 25px;
+  background-color: #000;
+  min-height: 350px;
+  box-sizing: border-box;
+}
+
+footer div.site-info {
+  color: #fff;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1006px) {
+  #content {
+    padding: 0 15px;
+  }
 }
