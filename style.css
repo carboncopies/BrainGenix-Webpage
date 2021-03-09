@@ -85,9 +85,19 @@ body nav a#signin-link {
   background-color: #008037;
   color: #fff;
   text-decoration: none;
+  position: relative;
+  top: 0;
   padding: 0 15px;
   margin-left: 21px;
   text-transform: uppercase;
+  transition: 300ms;
+}
+
+body nav a#signin-link:hover {
+  opacity: 1;
+  background-color: #00662c;
+  transition: 300ms;
+  top: -1px;
 }
 
 /* CONTENT */
