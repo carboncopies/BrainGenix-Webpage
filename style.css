@@ -3,10 +3,15 @@
 /* GENERAL STYLING */
 body {
   font-family: 'Oswald', sans-serif;
+  background-color: #0E0E0E;
 }
 
 .hero-landing {
-  min-height: 550px;
+  min-height: 640px;
+  background-image: url('Assets/Images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 
 .hero-landing h2 {
@@ -31,7 +36,7 @@ body nav {
     width: 100%;
     height: 85px;
     position: fixed;
-    background-color: white;
+    background-color: #0E0E0E;
     user-select: none;
     padding: 10px;
     top: 0;
@@ -66,7 +71,7 @@ body nav ul li {
 }
 
 body nav ul a {
-  color: #008037;
+  color: #B8B8B8;
   opacity: 1;
   transition: 300ms;
   text-transform: uppercase;
@@ -78,43 +83,14 @@ body nav a {
   transition: 300ms;
 }
 
-body nav a:hover {
-  opacity: .8;
-  transition: 300ms;
-}
-
-body nav a.facebook-link {
-  color: #4267B2;
-  margin: 0 5px;
-}
-
 body nav a.github-link {
-  color: #000;
+  color: #B8B8B8;
   margin: 0 5px;
 }
 
-body nav ul a:hover {
-  opacity: .8;
+body nav a:hover {
+  color: #09CB1D;
   transition: 300ms;
-}
-
-body nav a#signin-link {
-  background-color: #008037;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  top: 0;
-  padding: 0 15px;
-  margin-left: 21px;
-  text-transform: uppercase;
-  transition: 300ms;
-}
-
-body nav a#signin-link:hover {
-  opacity: 1;
-  background-color: #00662c;
-  transition: 300ms;
-  top: -1px;
 }
 
 /* CONTENT */
