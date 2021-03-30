@@ -109,6 +109,11 @@ img.hero {
   max-width: 100%;
 }
 
+/* GETTING STARTED */
+.card {
+  color: white;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
