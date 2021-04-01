@@ -104,6 +104,15 @@ body nav a:hover {
   position: relative;
 }
 
+.texture {
+  background-image: url('Assets/Images/binding-dark.png');
+  background-position: center;
+  background-color: #1C1C1C;
+  background-repeat: repeat;
+  border: 2px solid #444444;
+  border-width: 2px 0 2px 0;
+}
+
 /* HERO SECTION */
 img.hero {
   max-width: 100%;
@@ -115,12 +124,12 @@ img.hero {
 }
 
 /* FOOTER */
-footer {
+footer.texture {
   width: 100%;
   padding: 25px;
-  background-color: #000;
   min-height: 350px;
   box-sizing: border-box;
+  border-bottom-width: 0;
 }
 
 footer div.site-info {
