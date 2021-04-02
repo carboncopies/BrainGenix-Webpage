@@ -17,6 +17,8 @@ body {
   background-position: center;
   width: 100%;
   position: relative;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .hero-landing .column {
@@ -32,6 +34,8 @@ body {
   color: white;
   text-shadow: 0 0 15px black;
   line-height: 1.1;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 hr {
@@ -237,6 +241,8 @@ img.hero {
   font-family: Roboto, sans-serif;
   position: relative;
   margin-top: 42px;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .hero-landing .callout-card {
@@ -255,12 +261,16 @@ img.hero {
   font-weight: 900;
   margin-top: 5px;
   margin-bottom: 15px;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .hero-landing .callout-card p {
   font-weight: 300;
   line-height: 1.472;
   font-size: 19px;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .hero-landing .callout-card a.callout-button {
