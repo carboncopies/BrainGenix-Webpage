@@ -138,6 +138,7 @@ body nav a:hover {
   margin: auto;
   vertical-align: top;
   box-sizing: border-box;
+  position: relative;
 }
 
 .card h3 {
@@ -152,6 +153,36 @@ body nav a:hover {
   font-size: 14px;
   color: #8D8D8D;
   text-align: left;
+  line-height: 1.3;
+}
+
+.card .button-cont {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.card .button-cont .card-button {
+  background-color: #292929;
+  font-size: 16px;
+  color: #938E8E;
+  border-radius: 8px;
+  padding: 8px 25px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 300ms;
+}
+
+.card .button-cont .card-button:hover {
+  background-color: #0e0e0e;
+  color: #d3d3d3;
+  transition: 300ms;
 }
 
 .section {
@@ -159,6 +190,8 @@ body nav a:hover {
 }
 
 .section h2 {
+  font-size: 42px;
+  margin-top: 5px;
   text-align: center;
   font-weight: 900;
   color: #09CB1D;
@@ -184,6 +217,17 @@ img.hero {
 #getting-started .card {
   height: 250px;
   width: 303px;
+  margin: 5px 15px;
+}
+
+/* FURTHER READING */
+#further-reading .card {
+  margin: auto;
+  display: block;
+}
+
+#further-reading .card h3 {
+  text-align: center;
 }
 
 /* FOOTER */
