@@ -6,17 +6,37 @@ body {
   background-color: #0E0E0E;
 }
 
+::selection {
+  background-color: rgba(180, 180, 180, 0.3);
+}
+
 .hero-landing {
   min-height: 640px;
   background-image: url('Assets/Images/hero-bg.png');
   background-size: cover;
   background-position: center;
   width: 100%;
+  position: relative;
+}
+
+.hero-landing .column {
+  display: inline-block;
+  max-width: 562px;
+  vertical-align: top;
 }
 
 .hero-landing p.subtitle {
-  font-size: 36px;
+  font-size: 37px;
+  font-weight: 200;
+  letter-spacing: .025em;
   color: white;
+  text-shadow: 0 0 15px black;
+  line-height: 1.1;
+}
+
+hr {
+  border: 1px solid #B7B7B7;
+  border-width: 0 0 1px 0;
 }
 
 /* NAVBAR */
@@ -202,11 +222,123 @@ img.hero {
   max-width: 100%;
 }
 
+.hero-landing #hero-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .hero-landing h1 {
   font-size: 42px;
   font-weight: 900;
   color: #09CB1D;
   font-family: Roboto, sans-serif;
+  position: relative;
+  margin-top: 42px;
+}
+
+.hero-landing .callout-card {
+  background-color: white;
+  height: 266px;
+  width: 562px;
+  color: #545454;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.hero-landing .callout-card h2 {
+  color: #09CB1D;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.hero-landing .callout-card p {
+  font-weight: 300;
+  line-height: 1.472;
+  font-size: 19px;
+}
+
+.hero-landing .callout-card a.callout-button {
+  display: inline-block;
+  color: white;
+  background-color: #09CB1D;
+  text-shadow: 0 0 10px rgb(0 0 0 / 69%);
+  border-radius: 8px;
+  padding: 8px 25px;
+  text-decoration: none;
+  transition: 300ms;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 2px;
+  transition: 300ms;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.hero-landing .callout-card a.callout-button:hover {
+  background-color: #0ca11b;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  transition: 300ms;
+}
+
+.hero-landing #wbe-process {
+  margin-top: 165px;
+  position: relative;
+  left: 125px;
+}
+
+/* WHY BRAINGENIX */
+.reason {
+  max-width: 674px;
+  display: block;
+  margin: 35px auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.reason-icon, .reason-content {
+  display: inline-block;
+  vertical-align: top;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.reason-icon {
+  user-select: none;
+  -webkit-user-select: none;
+  transform: scale(1);
+  transition: 300ms;
+}
+
+.reason-icon:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.reason-content {
+  width: calc(100% - 135px);
+  padding-left: 35px;
+  box-sizing: border-box;
+}
+
+.reason-content h3 {
+  color: #C4C4C4;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reason-content p {
+  color: #8D8D8D;
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 8px;
+  line-height: 1.2;
 }
 
 /* GETTING STARTED */
@@ -231,6 +363,11 @@ img.hero {
 }
 
 /* FOOTER */
+footer {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 footer.texture {
   width: 100%;
   padding: 25px;
