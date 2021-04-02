@@ -21,20 +21,20 @@ body {
 
 /* NAVBAR */
 body nav {
-    width: 100%;
-    height: 55px;
-    position: fixed;
-    background-color: #0E0E0E;
-    user-select: none;
-    padding: 10px;
-    top: 0;
-    left: 0;
-    text-align: right;
-    box-sizing: border-box;
-    /*border: 1px solid #008037;*/
-    /*border-width: 0 0 1px 0;*/
-    font-size: 24px;
-    z-index: 1;
+  width: 100%;
+  height: 57px;
+  position: fixed;
+  background-color: #0E0E0E;
+  user-select: none;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  text-align: right;
+  box-sizing: border-box;
+  border: 1px solid #B8B8B8;
+  border-width: 0 0 2px 0;
+  font-size: 24px;
+  z-index: 1;
 }
 
 body nav .header-logo-link {
@@ -109,7 +109,7 @@ body nav a:hover {
 
 /* CONTENT */
 #content {
-  margin-top: 55px;
+  margin-top: 57px;
 }
 
 #content article {
@@ -127,6 +127,43 @@ body nav a:hover {
   border-width: 2px 0 2px 0;
 }
 
+/* COMPONENTS */
+.card {
+  background-color: #3A3A3A;
+  border-radius: 15px;
+  padding: 25px;
+  display: inline-block;
+  max-width: 600px;
+  min-height: 220px;
+  margin: auto;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  font-weight: 400;
+  color: hsl(0, 0%, 72%);
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #8D8D8D;
+  text-align: left;
+}
+
+.section {
+  padding: 45px 15px;
+}
+
+.section h2 {
+  text-align: center;
+  font-weight: 900;
+  color: #09CB1D;
+}
+
 /* HERO SECTION */
 img.hero {
   max-width: 100%;
@@ -140,8 +177,13 @@ img.hero {
 }
 
 /* GETTING STARTED */
-.card {
-  color: white;
+#getting-started {
+  text-align: center;
+}
+
+#getting-started .card {
+  height: 250px;
+  width: 303px;
 }
 
 /* FOOTER */
@@ -154,10 +196,46 @@ footer.texture {
 }
 
 footer div.site-info {
-  color: #fff;
+  color: #B8B8B8;
   max-width: 960px;
   margin: auto;
   text-align: center;
+}
+
+footer div.site-info a {
+  color: #B8B8B8;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+footer p.footer-branding {
+  font-size: 34.2px;
+  color: #B8B8B8;
+}
+
+footer p.footer-branding a {
+  opacity: 1;
+  transition: 300ms;
+}
+
+footer p.footer-branding a:hover {
+  opacity: .8;
+  transition: 300ms;
+}
+
+footer p.footer-branding img {
+  position: relative;
+  left: -5px;
+  top: 16px;
+}
+
+footer p.footer-info {
+  font-size: 13px;
+}
+
+footer p.footer-info a:hover {
+  color: #09CB1D;
+  transition: 300ms;
 }
 
 /* MEDIA QUERIES */
