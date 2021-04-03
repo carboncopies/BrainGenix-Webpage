@@ -469,4 +469,38 @@ footer p.footer-info a:hover {
   .hero-landing #hero-blob {
     left: -215px;
   }
+  .section h2 {
+    font-size: 29px;
+  }
+}
+
+@media only screen and (max-width: 693px) {
+  .reason-content h3 {
+    font-size: 24px;
+  }
+  .reason-content p {
+    font-size: 16px;
+  }
+  .reason-icon {
+    width: 75px;
+    margin-top: 7px;
+  }
+  .reason-content {
+    width: calc(100% - 79px);
+  }
+  .card h3 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 643px) {
+  .hero-landing #hero-blob {
+    display: none;
+  }
+  .hero-landing .callout-card {
+    width: 100%;
+  }
+  .hero-landing .column {
+    max-width: 100%;
+  }
 }
