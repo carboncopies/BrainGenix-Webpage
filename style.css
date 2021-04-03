@@ -127,7 +127,7 @@ body nav a.github-link {
 }
 
 body nav a:hover {
-  color: #09CB1D;
+  color: #37a843;
   transition: 300ms;
 }
 
@@ -218,7 +218,7 @@ body nav a:hover {
   margin-top: 5px;
   text-align: center;
   font-weight: 900;
-  color: #09CB1D;
+  color: #37a843;
 }
 
 /* HERO SECTION */
@@ -237,7 +237,7 @@ img.hero {
 .hero-landing h1 {
   font-size: 42px;
   font-weight: 900;
-  color: #09CB1D;
+  color: #37a843;
   font-family: Roboto, sans-serif;
   position: relative;
   margin-top: 42px;
@@ -256,7 +256,7 @@ img.hero {
 }
 
 .hero-landing .callout-card h2 {
-  color: #09CB1D;
+  color: #37a843;
   font-size: 24px;
   font-weight: 900;
   margin-top: 5px;
@@ -276,7 +276,7 @@ img.hero {
 .hero-landing .callout-card a.callout-button {
   display: inline-block;
   color: white;
-  background-color: #09CB1D;
+  background-color: #37a843;
   text-shadow: 0 0 10px rgb(0 0 0 / 69%);
   border-radius: 8px;
   padding: 8px 25px;
@@ -291,7 +291,7 @@ img.hero {
 }
 
 .hero-landing .callout-card a.callout-button:hover {
-  background-color: #0ca11b;
+  background-color: #1e5c25;
   text-shadow: 0 0 20px rgba(0, 0, 0, 1);
   transition: 300ms;
 }
@@ -425,13 +425,48 @@ footer p.footer-info {
 }
 
 footer p.footer-info a:hover {
-  color: #09CB1D;
+  color: #37a843;
   transition: 300ms;
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 1119px) {
+  .hero-landing #hero-blob {
+    left: -145px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .hero-landing #wbe-process {
+    left: 65px;
+  }
+}
+
+@media only screen and (max-width: 1037px) {
+  #getting-started .card {
+    margin: 15px;
+  }
+}
+
 @media only screen and (max-width: 1006px) {
+  .section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   #content {
-    padding: 0 15px;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 989px) {
+  .hero-landing #wbe-process {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 704px) {
+  .hero-landing #hero-blob {
+    left: -215px;
   }
 }
