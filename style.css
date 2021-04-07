@@ -131,6 +131,11 @@ body nav a:hover {
   transition: 300ms;
 }
 
+.b-hamburger .b-ham-inner {
+  background-color: #B8B8B8;
+  border-radius: 3px;
+}
+
 /* CONTENT */
 #content {
   margin-top: 57px;
