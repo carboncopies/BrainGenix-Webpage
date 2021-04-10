@@ -497,6 +497,7 @@ footer p.footer-info a:hover {
     left: 0;
     right: 0;
     top: 85px;
+    padding-left: 0;
   }
   body nav ul li {
     display: block;
@@ -543,5 +544,57 @@ footer p.footer-info a:hover {
   }
   .hero-landing .column {
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  .hero-landing .callout-card p {
+    font-size: 15px;
+  }
+  .hero-landing .callout-card {
+    height: auto;
+  }
+  .hero-landing p.subtitle {
+    font-size: 28px;
+  }
+  #content.hero-landing {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .reason-content h3 {
+    font-size: 18px;
+  }
+  .reason-content p {
+    font-size: 13px;
+  }
+  .reason-icon {
+    width: 45px;
+    margin-top: 7px;
+  }
+  .reason-content {
+    width: calc(100% - 49px);
+    padding-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  #further-reading .card {
+    min-height: 265px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  #further-reading .card {
+    min-height: 320px;
+  }
+  #getting-started .card {
+    margin: 15px 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 65px;
   }
 }
