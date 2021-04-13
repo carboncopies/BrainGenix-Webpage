@@ -351,7 +351,7 @@ img.hero {
 }
 
 .reason-content {
-  width: calc(100% - 135px);
+  width: calc(100% - 145px);
   padding-left: 35px;
   box-sizing: border-box;
 }
@@ -528,7 +528,7 @@ footer p.footer-info a:hover {
     margin-top: 7px;
   }
   .reason-content {
-    width: calc(100% - 79px);
+    width: calc(100% - 95px);
   }
   .card h3 {
     font-size: 26px;
@@ -576,7 +576,7 @@ footer p.footer-info a:hover {
     margin-top: 7px;
   }
   .reason-content {
-    width: calc(100% - 49px);
+    width: calc(100% - 65px);
     padding-left: 8px;
   }
 }
