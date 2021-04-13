@@ -449,6 +449,48 @@ footer p.footer-info a:hover {
   transition: 300ms;
 }
 
+/* INTERIOR PAGE */
+.interior-header {
+  background-image: url('Assets/Images/hero-bg.png');
+  min-height: 220px;
+  padding: 25px;
+  box-sizing: border-box;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.interior-header h1 {
+  color: #37a843;
+  font-family: 'Roboto', sans-serif;
+  max-width: 960px;
+  display: block;
+  margin: auto;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+#main.section {
+  color: #8D8D8D;
+  max-width: 960px;
+  display: block;
+  margin: 35px auto;
+}
+
+#main.section h2 {
+  text-align: left;
+  font-size: 28px;
+}
+
+#main.section p, #main.section ul, #main.section ol {
+  line-height: 1.4;
+  letter-spacing: .075em;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1119px) {
   .hero-landing #hero-blob {
@@ -482,6 +524,9 @@ footer p.footer-info a:hover {
 @media only screen and (max-width: 989px) {
   .hero-landing #wbe-process {
     display: none;
+  }
+  .interior-header h1 {
+    left: 25px;
   }
 }
 
@@ -561,6 +606,12 @@ footer p.footer-info a:hover {
     height: auto;
     min-height: auto;
     padding-bottom: 35px;
+  }
+  .interior-header h1 {
+    font-size: 32px;
+  } 
+  #main.section h2 {
+    font-size: 24px;
   }
 }
 
