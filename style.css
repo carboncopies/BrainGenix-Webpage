@@ -491,6 +491,24 @@ footer p.footer-info a:hover {
   letter-spacing: .075em;
 }
 
+#main.section a {
+    color: #37a843;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+#main.section a:hover {
+  color: #5fd86b;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1119px) {
   .hero-landing #hero-blob {
