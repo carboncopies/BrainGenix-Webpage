@@ -46,70 +46,116 @@
           </div>
         </nav>
         <div id="content" class="interior-header">
-          <h1>Example Page</h1>
+          <h1>Installation Guide</h1>
         </div>
         <div id="main" class="section">
-          <h2>Why BrainGenix?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Sub-heading here...</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus <a href="https://google.com" target="_blank">error sit voluptatem</a> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-          <ul>
-            <li>Testing1</li>
-            <li>Testing more</li>
-            <li>And another...</li>
-          </ul>
-          <p>Python code block:</p>
-          <p>
-            <pre><code class="language-python"># comments here
+          
+          <h2>Note</h2>
+          <p>Before you go through the effort of installing BrainGenix, we'd just like to let you know that BrainGenix is not ready for a production deployment yet. Features present now may be changed around between versions with no warnings or deprecation support. Once we have stable releases of BrainGenix, then we'll take this notice down. Until then, please just keep this in mind.</p>
+          
+          <h2>Supported Platforms</h2>
+          <p>BrainGenix has been developed with support for Linux systems in mind. Our development servers run Ubuntu Server, so if you want the best chance of your install working, please install that. If you're running a BSD distro, you may be able to get BrainGenix to work, however we make no guarentees. Lastly, if you're running Windows or MacOS, BrainGenix won't work. You'll need to install Ubuntu for this to work. We're not planning on supporting either of these operating systems.</p>
+          
+          <h2>Required Packages</h2>
+          <p>BrainGenix requires many differnet packages. Below is a list of the packages required for a basic installation. 
+            These lists only show the root level packages, so you'll need to install the dependencies yourself if nessicary. 
+          </br>
+            For example, this page does not list Java even though it's needed for Apache Zookeeper.</p>
 
-string_test = "yeah, it's a string"
-              
-#code block
-if (true):
-print("working")</code></pre>
-          </p>
-          <p>yaml example:</p>
-          <p>
-            <pre><code class="language-yaml">data: |
-   Each of these
-   Newlines
-   Will be broken up
-           
-data: >
-   This text is
-   wrapped and will
-   be formed into
-   a single paragraph</code></pre>
-          </p>
-          <p>JSON example:</p>
-          <p>
-            <pre><code class="language-javascript">{
-  "json": [
-    "rigid",
-    "better for data interchange"
-  ],
-  "yaml": [
-    "slim and flexible",
-    "better for configuration"
-  ],
-  "object": {
-    "key": "value",
-    "array": [
-      {
-        "null_value": null
-      },
-      {
-        "boolean": true
-      },
-      {
-        "integer": 1
-      }
-    ]
-  },
-  "paragraph": "Blank lines denotenparagraph breaksn",
-  "content": "Or wencan autonconvert line breaksnto save space"
-}</code></pre>
-          </p>
+          <h3>apt Packages</h3>
+          <ul>
+            <li>python3</li>
+            <li>python3-pip</li>
+            <li>zookeeper</li>
+            <li>kafka</li>
+            <li>mysql-server</li>
+          </ul>
+
+          <h3>Python Packages</h3>
+          <ul>
+            <li>brian2</li>
+            <li>py-cpuinfo</li>
+            <li>psutil</li>
+            <li>GPUtil</li>
+            <li>kazoo</li>
+            <li>pymysql</li>
+            <li>pycrypto</li>
+            <li>confluent-kafka</li>
+          </ul>
+
+          <p>Alright, let's get started.</p>
+
+
+
+          <h2>Installing Packages</h2>
+
+
+
+          <p>The first thing you'll want to do is clone the BrainGenix repository to your local disk.</p>
+
+          <p>Firstly, navigate to the directory where you want to install BrainGenix.</p>
+          <p><pre><code class="language-bash">mkdir BrainGenix
+git clone https://github.com/carboncopies/BrainGenix/</code></pre></p>
+
+          <p>Next, you'll want to change directories into the one we just cloned BrainGenix into.</p>
+          <p><pre><code class="language-bash">cd BrainGenix</code></pre></p>
+
+          <p>The next part is really simple! You've just got to run the install.sh script as root.</p>
+          <p><pre><code class="language-bash">sudo bash install.sh</code></pre></p>
+
+          <p>After the install script finishes, you should have a working apache zookeeper installation.</p>
+          <p>Unfortunately the script does not yet automatically install Kafka as well, so you'll need to find a tutorial for that if you don't already know how to install it.</p>
+
+
+
+          <h2>Configuration Files</h2>
+
+
+
+          <p>Now, you should be able to configure the BrainGenix config files. These files are located in BrainGenix/System/Config/. You'll need to edit these to fit your specific setup.</p>
+
+          <p>This file is going to configure the main logging system of BrainGenix which records all messages produced for debugging and error reporting to the user.</p>
+          <p><pre><code class="language-yaml">{
+LogPath: ../Logs/, # Set The Local Path For Logs
+PrintLogText: True, # Enable or Disable Printing Logs To The Console
+RetentionPolicy: 2000000  # Define The Number Of Lines Of Logs To Keep 
+}</code></pre></p>
+
+
+          <p>This file is going to configure the interface from BrainGenix to Zookeeper.</p>
+          <p><pre><code class="language-yaml">{
+ZKHost: 10.1.4.2,
+ZKPort: 2181
+}</code></pre></p>
+
+
+          <p>Next, configure the Kafka Interface.</p>
+          <p><pre><code class="language-yaml">{
+KafkaHost: 127.0.0.1,
+KafkaPort: 9092
+}</code></pre></p>        
+
+
+          <p>Finally, configure the Database Interface.</p>
+          <p><pre><code class="language-yaml">{
+DatabaseUsername: bgUser,
+DatabasePassword: 123456,
+DatabaseHost: 127.0.0.1,
+DatabaseName: bgdb
+}</code></pre></p>   
+
+
+
+          <h2>Setting Up MySQL</h2>
+          <p>Brad, can you fill this in?</p>
+
+          
+          <h2>Testing</h2>
+          <p>Now, with that out of the way, you should be able to test your system. To test it, please run the following command in the BrainGenix/System directory.</p>
+          <p><pre><code class="language-bash">python3 Main.py</code></pre></p>
+
+          <p>If you encounter any errors, you'll need to go back and address them. If you're stuck, please feel free to contact us by email <a href="mailto:braingenix@carboncopies.org">here</a> or open an issue on github <a href="https://github.com/carboncopies/BrainGenix/issues">here</a>.</p>
+
         </div>
         <footer class="texture">
           <div class="site-info">
