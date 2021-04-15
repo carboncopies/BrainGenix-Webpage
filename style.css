@@ -346,7 +346,7 @@ img.hero {
 }
 
 .reason-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1); /* Changed to 1 from 1.1 to avoid button look */
   transition: 300ms;
 }
 
