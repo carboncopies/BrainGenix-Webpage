@@ -54,11 +54,11 @@
           <p>Before you go through the effort of installing BrainGenix, we'd just like to let you know that BrainGenix is not ready for a production deployment yet. Features present now may be changed around between versions with no warnings or deprecation support. Once we have stable releases of BrainGenix, then we'll take this notice down. Until then, please just keep this in mind.</p>
           
           <h2>Supported Platforms</h2>
-          <p>BrainGenix has been developed with support for Linux systems in mind. Our development servers run Ubuntu Server, so if you want the best chance of your install working, please install that. If you're running a BSD distro, you may be able to get BrainGenix to work, however we make no guarentees. Lastly, if you're running Windows or MacOS, BrainGenix won't work. You'll need to install Ubuntu for this to work. We're not planning on supporting either of these operating systems.</p>
+          <p>BrainGenix has been developed with support for Linux systems in mind. Our development servers run Ubuntu Server, so if you want the best chance of your install working, please install that. If you're running a BSD distro, you may be able to get BrainGenix to work, however we make no guarantees. Lastly, if you're running Windows or MacOS, BrainGenix won't work. You'll need to install Ubuntu for this to work. We're not planning on supporting either of these operating systems.</p>
           
           <h2>Required Packages</h2>
-          <p>BrainGenix requires many differnet packages. Below is a list of the packages required for a basic installation. 
-            These lists only show the root level packages, so you'll need to install the dependencies yourself if nessicary. 
+          <p>BrainGenix requires many different packages. Below is a list of the packages required for a basic installation. 
+            These lists only show the root level packages, so you'll need to install the dependencies yourself if necessary. 
           </br>
             For example, this page does not list Java even though it's needed for Apache Zookeeper.</p>
 
@@ -147,7 +147,15 @@ DatabaseName: bgdb
 
 
           <h2>Setting Up MySQL</h2>
-          <p>Brad, can you fill this in?</p>
+          <p>These are the instructions for installing on Ubuntu:
+		  </br>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04">How To Install MySQL on Ubuntu 20.04 | DigitalOcean</a>
+</br>
+There will also be a module in the Python code (DatabaseInterface.py) that will contain methods for retrieving or writing data to the database.
+The recommended setup is to have a local instance of MySQL to run while coding in the local environment. 
+</br>
+Download MySQL Workbench, MySQL Server, and Connector/Python. The installer is found here: <a href="https://dev.mysql.com/downloads/installer/">MySQL:: Download MySQL Installer</a>, then install the parts. Once connected to the local database via the Workbench, the Database/GenerateBrianDb.sql file in the code will set up the new database, tables, etc. Paste it into Workbench and run the entire file.
+</p>
 
           
           <h2>Testing</h2>
