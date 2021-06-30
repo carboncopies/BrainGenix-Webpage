@@ -51,16 +51,13 @@
         <div id="main" class="section">
           
           <h2>Note</h2>
-          <p>Before you go through the effort of installing BrainGenix, we'd just like to let you know that BrainGenix is not ready for a production deployment yet. Features present now may be changed around between versions with no warnings or deprecation support. Once we have stable releases of BrainGenix, then we'll take this notice down. Until then, please just keep this in mind.</p>
+          <p>Before you begin installing BrainGenix, please be aware that BrainGenix is in an alpha phase of development and not yet ready for production deployments. Features available today may be modified or eliminated through version updates without warning or deprecation support. As soon as a stable release of BrainGenix becomes available, then we will remove this notice.</p>
           
           <h2>Supported Platforms</h2>
-          <p>BrainGenix has been developed with support for Linux systems in mind. Our development servers run Ubuntu Server, so if you want the best chance of your install working, please install that. If you're running a BSD distro, you may be able to get BrainGenix to work, however we make no guarantees. Lastly, if you're running Windows or MacOS, BrainGenix won't work. You'll need to install Ubuntu for this to work. We're not planning on supporting either of these operating systems.</p>
+          <p>BrainGenix is developed with support prioritized for Linux systems. Our development servers run Ubuntu Server, so to ensure your install works, a recent version of Ubuntu is required. If you are operating a BSD distribution, then you may be able to run BrainGenix, but we offer no guarantee. BrainGenix will not work on Windows or MacOS, so you must first install Ubuntu on your system, as we do not plan to support either OS in the near future.</p>
           
           <h2>Required Packages</h2>
-          <p>BrainGenix requires many different packages. Below is a list of the packages required for a basic installation. 
-            These lists only show the root level packages, so you'll need to install the dependencies yourself if necessary. 
-          </br>
-            For example, this page does not list Java even though it's needed for Apache Zookeeper.</p>
+          <p>BrainGenix requires a variety of supporting packages for a basic installation. The following requirements list only includes the root-level packages, so you will also need to install any dependencies as necessary. For example, while not listed below, Java is a dependency of Apache Zookeeper.</p>
 
           <h3>apt Packages</h3>
           <ul>
@@ -93,18 +90,18 @@
 
           <p>The first thing you'll want to do is clone the BrainGenix repository to your local disk.</p>
 
-          <p>Firstly, navigate to the directory where you want to install BrainGenix.</p>
+          <p>Navigate to any preferred local directory to install BrainGenix.</p>
           <p><pre><code class="language-bash">mkdir BrainGenix
 git clone https://github.com/carboncopies/BrainGenix/</code></pre></p>
 
-          <p>Next, you'll want to change directories into the one we just cloned BrainGenix into.</p>
+          <p>Next, change into this directory that now holds the clone of BrainGenix.</p>
           <p><pre><code class="language-bash">cd BrainGenix</code></pre></p>
 
-          <p>The next part is really simple! You've just got to run the install.sh script as root.</p>
+          <p>Run the install.sh script as the root user.</p>
           <p><pre><code class="language-bash">sudo bash install.sh</code></pre></p>
 
           <p>After the install script finishes, you should have a working apache zookeeper installation.</p>
-          <p>Unfortunately the script does not yet automatically install Kafka as well, so you'll need to find a tutorial for that if you don't already know how to install it.</p>
+          <p>This script does not yet automatically install Kafka, so we recommend following an installation tutorial, such as <link href=https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04 rel=this one>, if you are not already familiar.</p>
 
 
 
@@ -112,31 +109,31 @@ git clone https://github.com/carboncopies/BrainGenix/</code></pre></p>
 
 
 
-          <p>Now, you should be able to configure the BrainGenix config files. These files are located in BrainGenix/System/Config/. You'll need to edit these to fit your specific setup.</p>
+          <p>Following the above installation, you should now be ready to update the BrainGenix configuration files, which are located in BrainGenix/System/Config/. You are required to edit these files to match your local environment.</p>
 
-          <p>This file is going to configure the main logging system of BrainGenix which records all messages produced for debugging and error reporting to the user.</p>
+          <p>LoggerConfig.yaml configures the main logging system of BrainGenix that records all messages generated for debugging and error reporting to the user.</p>
           <p><pre><code class="language-yaml">{
 LogPath: ../Logs/, # Set The Local Path For Logs
 PrintLogText: True, # Enable or Disable Printing Logs To The Console
-RetentionPolicy: 2000000  # Define The Number Of Lines Of Logs To Keep 
+RetentionPolicy: 2000000  # Define The Number Of Lines Of Logs To Keep
 }</code></pre></p>
 
 
-          <p>This file is going to configure the interface from BrainGenix to Zookeeper.</p>
+          <p>ZookeeperConfig.yaml configures the interface between BrainGenix and Zookeeper.</p>
           <p><pre><code class="language-yaml">{
 ZKHost: 10.1.4.2,
 ZKPort: 2181
 }</code></pre></p>
 
 
-          <p>Next, configure the Kafka Interface.</p>
+          <p>Next, configure the Kafka interface with KafkaConfig.yaml.</p>
           <p><pre><code class="language-yaml">{
 KafkaHost: 127.0.0.1,
 KafkaPort: 9092
 }</code></pre></p>        
 
 
-          <p>Finally, configure the Database Interface.</p>
+          <p>Finally, configure the database interface with DatabaseConfig.yaml.</p>
           <p><pre><code class="language-yaml">{
 DatabaseUsername: bgUser,
 DatabasePassword: 123456,
@@ -159,10 +156,10 @@ Download MySQL Workbench, MySQL Server, and Connector/Python. The installer is f
 
           
           <h2>Testing</h2>
-          <p>Now, with that out of the way, you should be able to test your system. To test it, please run the following command in the BrainGenix/System directory.</p>
+          <p>After your environment is configured, you can now test your system by executing the following command from within the BrainGenix/System directory:</p>
           <p><pre><code class="language-bash">python3 Main.py</code></pre></p>
 
-          <p>If you encounter any errors, you'll need to go back and address them. If you're stuck, please feel free to contact us by email <a href="mailto:braingenix@carboncopies.org">here</a> or open an issue on github <a href="https://github.com/carboncopies/BrainGenix/issues">here</a>.</p>
+          <p>If you encounter any errors, then you will need to resolve each issue. If you are stuck, please feel free to contact us by email or open an issue on GitHub <a href="mailto:braingenix@carboncopies.org">here</a> or open an issue on github <a href="https://github.com/carboncopies/BrainGenix/issues">here</a>.</p>
 
         </div>
         <footer class="texture">
