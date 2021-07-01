@@ -3,7 +3,7 @@
 <h1 align="center">What's BrainGenix?</h1>
 BrainGenix is a distributed biological neuron simulator designed for the emulation of human minds. The simulator uses Apache Zookeeper and other production-grade sub-systems to ensure it is stable and fault-tolerant. BrainGenix is designed with scalability in mind to run efficiently from one to a hundred billion neurons.
 
-<h2 align=center>Key Features</h2>
+<h2 align="center">Key Features</h2>
 BrainGenix runs with as many neurons as your simulation requires, from one to a billion.
 Performance is often an issue with simulations, so BrainGenix supports nearly every model. Based on the popular Brian simulator, any model that can be written as a differential equation is supported.
 Developed on Apache Zookeeper, BrainGenix leverages the leader-follower system, such that even a fault with the leader node will not result in a system crash.
