@@ -9,7 +9,7 @@ Performance is often an issue with simulations, so BrainGenix supports nearly ev
 Developed on Apache Zookeeper, BrainGenix leverages the leader-follower system, such that even a fault with the leader node will not result in a system crash.
 BrainGenix offers an extensive add-on interface that enables other popular systems to interact with simulations run by BrainGenix.
 Security is a top priority with whole brain emulation. We include many features to protect the simulation from unauthorized access.
-Documentation
+<h1 align="center">Documentation</h1>
 
 Our latest documentation is available [here](https://docs.google.com/document/d/1R2Zk7qGkwjAa3g9k2tVrDdsyme5nByGAks-30Ec13M8/edit).
 
