@@ -11,4 +11,4 @@ BrainGenix offers an extensive add-on interface that enables other popular syste
 Security is a top priority with whole brain emulation. We include many features to protect the simulation from unauthorized access.
 <h1 align="center">Documentation</h1>
 
-You may read the [Technical specifications](https://docs.google.com/document/d/1tVIB7KQcSRKNU_df8oPVR3wyBHagjv2xvqaMy-oDg18/edit#) document.
+You can find our Technical Specifications document [here](https://docs.google.com/document/d/1tVIB7KQcSRKNU_df8oPVR3wyBHagjv2xvqaMy-oDg18/edit#).
