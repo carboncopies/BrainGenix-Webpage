@@ -1,107 +1,97 @@
-<!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!doctype html>
 <html>
-<head>
-<title>BrainGenix - Installation</title>
-<link rel="stylesheet" href="http://www.olneypianostudio.com/hannah/bg/gradient.css">
-<link rel="stylesheet" href="https://braingenix.org/Assets/CSS/prism.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" media="screen and (min-device-width: 800px)" href="http://www.olneypianostudio.com/hannah/bg/main.css">
-<link rel="stylesheet" media="screen and (max-device-width: 800px)" href="http://www.olneypianostudio.com/hannah/bg/mobile.css">
-	<script src="https://braingenix.org/Assets/JS/prism.js"></script>
-	<style> 		
-	h2 { color:#B8B8B8; }
-	</style>
-</head>
+    <head>
+        <title>Home - Installation</title>
+        <!-- FAVICON          -->
+        <link rel="icon" href="../Assets/Images/wbe-process.svg">
+        
+        <!-- GOOGLE FONTS     -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- START META INFO  -->
+        <link rel="canonical" href="#" />
+      	<meta property="og:locale" content="en_US" />
+      	<meta property="og:type" content="website" />
+      	<meta property="og:title" content="The BrainGenix Project" />
+      	<meta property="og:url" content="#" />
+      	<meta property="og:site_name" content="The BrainGenix Project" />
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      	<!-- END META INFO    -->
+      	        
+        <!-- CSS              -->
+        <link rel="stylesheet" href="../normalize.css" />
+        <link rel="stylesheet" href="https://unpkg.com/behemoth-ui@1.0.0/behemoth-lib.css" />
+        <link rel="stylesheet" href="../style.css" />
+      	
+      	<!-- FONTAWESOME      -->
+      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
-<body>
-
-<div class="header">
-<a href="http://www.olneypianostudio.com/hannah/bg/">
-	<img src="http://olneypianostudio.com/hannah/bg/graphics/BG-Horizontal.png" height="87.75" width="400"></a>
-	<div class="nav">
-		<h3>
-		<a href="/hannah/bg/about/index.html">ABOUT&nbsp;&nbsp;</a>
-		
-<div class="dropdown">
-  <div class="dropbtn"><a href="#">
-	  PROJECTS&nbsp;&nbsp;</a>
-	</div><div class="dropdown-content">
-    <a href="/hannah/bg/projects/ui/index.html">UI</a>
-    <a href="/hannah/bg/projects/api/index.html">API</a>
-    <a href="/hannah/bg/projects/nes/index.html">NES</a>
-	<a href="/hannah/bg/projects/ers/index.html">ERS</a>
-	<a href="/hannah/bg/projects/sts/index.html">STS</a></div></div> 
-		
-		<a href="/hannah/bg/installation/index.html">INSTALLATION&nbsp;&nbsp;</a> 
-		<a href="/hannah/bg/documentation/index.html">DOCUMENTATION</a></h3></div>
-	</div>
-		
-	
-	<div class="mobile-nav" style="margin-top:-125px;">
-			
-<div class="mobile-dropdown" onclick="toggle_visibility()" style="width:90px;margin-left:850px;"><h3>
-  <i class="fa fa-bars" aria-hidden="true" style="color:#B8B8B8;font-size:60px;margin-left:20px;"></i>
-	  <br>
-	<div id="mobile-dropdown-content" style="display:none;margin-left:-220px;"><br>
-    <a href="/hannah/bg/about/index.html">ABOUT</a><br><br><br>
-    <a href="/hannah/bg/projects/index.html">PROJECTS</a><br><br><br>
-    <a href="/hannah/bg/installation/index.html">INSTALLATION</a><br><br><br>
-	<a href="/hannah/bg/documentation/index.html">DOCUMENTATION</a><br><br></div> 
-	</h3></div></div>
-		
-		<script type="text/javascript">
-    function toggle_visibility() 
-    {
-        var e = document.getElementById('mobile-dropdown-content');
-        if ( e.style.display == 'block' )
-            e.style.display = 'none';
-        else
-            e.style.display = 'block';
-    }
-</script>
-	
-<br><br><br>
-	
-	
-	<div class="intro" align="center"><h1>INSTALLATION</h1><br><div class="main">
-          <p>Before you begin installing BrainGenix, please be aware that BrainGenix is in an alpha phase of development and not yet ready for production deployments. Features available today may be modified or eliminated through version updates without warning or deprecation support. As soon as a stable release of BrainGenix becomes available, then we will remove this notice.</p></div><br><br>
+        <!-- PRISM CODE HIGHL -->
+        <link rel="stylesheet" href="../Assets/CSS/prism.css" data-noprefix />
+      </head>
+    <body>
+        <nav>
+          <a href="../index.html" class="header-logo-link"><img src="../Assets/Images/header-logo.svg" class="header-logo" />BrainGenix</a>
+          <ul>
+            <li><a href="../installation/index.html">Installation</a></li>
+            <li><a href="../documentation/index.html">Documentation</a></li>
+          </ul>
+          <a href="https://github.com/carboncopies/BrainGenix" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+          <div class='b-hamburger smooth'>
+            <div class='b-ham-inner'></div>
+            <div class='b-ham-inner'></div>
+            <div class='b-ham-inner'></div>
+          </div>
+        </nav>
+        <div id="content" class="interior-header">
+          <h1>Installation Guide</h1>
+        </div>
+        <div id="main" class="section">
           
-          <div class="main"><h2>Supported Platforms</h2>
-          <p>BrainGenix is developed with support prioritized for Linux systems. Our development servers run Ubuntu Server, so to ensure your install works, a recent version of Ubuntu is required. If you are operating a BSD distribution, then you may be able to run BrainGenix, but we offer no guarantee. BrainGenix will not work on Windows or MacOS, so you must first install Ubuntu on your system, as we do not plan to support either OS in the near future.</p></div><br><br>
+          <h2>Note</h2>
+          <p>Before you begin installing BrainGenix, please be aware that BrainGenix is in an alpha phase of development and not yet ready for production deployments. Features available today may be modified or eliminated through version updates without warning or deprecation support. As soon as a stable release of BrainGenix becomes available, then we will remove this notice.</p>
           
-          <div class="main"><h2>Required Packages</h2>
-          <p>BrainGenix requires a variety of supporting packages for a basic installation. The following requirements list only includes the root-level packages, so you will also need to install any dependencies as necessary. For example, while not listed below, Java is a dependency of Apache Zookeeper.</p><br>
+          <h2>Supported Platforms</h2>
+          <p>BrainGenix is developed with support prioritized for Linux systems. Our development servers run Ubuntu Server, so to ensure your install works, a recent version of Ubuntu is required. If you are operating a BSD distribution, then you may be able to run BrainGenix, but we offer no guarantee. BrainGenix will not work on Windows or MacOS, so you must first install Ubuntu on your system, as we do not plan to support either OS in the near future.</p>
+          
+          <h2>Required Packages</h2>
+          <p>BrainGenix requires a variety of supporting packages for a basic installation. The following requirements list only includes the root-level packages, so you will also need to install any dependencies as necessary. For example, while not listed below, Java is a dependency of Apache Zookeeper.</p>
 
-          <h3>apt Packages</h3><br>
-          <p>python3<br>
-          python3-pip<br>
-          zookeeper<br>
-          kafka<br>
-			  mysql-server<br><br></p>
+          <h3>apt Packages</h3>
+          <ul>
+            <li>python3</li>
+            <li>python3-pip</li>
+            <li>zookeeper</li>
+            <li>kafka</li>
+            <li>mysql-server</li>
+          </ul>
 
-          <h3>Python Packages</h3><br>
-          <p> brian2<br>
-           py-cpuinfo<br>
-           psutil<br>
-           GPUtil<br>
-           kazoo<br>
-           pymysql<br>
-           pycrypto<br>
-			  confluent-kafka<br></p><br>
+          <h3>Python Packages</h3>
+          <ul>
+            <li>brian2</li>
+            <li>py-cpuinfo</li>
+            <li>psutil</li>
+            <li>GPUtil</li>
+            <li>kazoo</li>
+            <li>pymysql</li>
+            <li>pycrypto</li>
+            <li>confluent-kafka</li>
+          </ul>
 
-			  <p><b>Alright, let's get started.</b></p></div><br><br>
+          <p>Alright, let's get started.</p>
 
 
 
-          <div class="main"><h2>Installing Packages</h2>
+          <h2>Installing Packages</h2>
 
 
 
           <p>The first thing you'll want to do is clone the BrainGenix repository to your local disk.</p>
 
           <p>Navigate to any preferred local directory to install BrainGenix.</p>
-          <p><pre><code class="language-bash" style="background-color:#2e2e1f;align:center;">mkdir BrainGenix
+          <p><pre><code class="language-bash">mkdir BrainGenix
 git clone https://github.com/carboncopies/BrainGenix/</code></pre></p>
 
           <p>Next, change into this directory that now holds the clone of BrainGenix.</p>
@@ -111,11 +101,11 @@ git clone https://github.com/carboncopies/BrainGenix/</code></pre></p>
           <p><pre><code class="language-bash">sudo bash install.sh</code></pre></p>
 
           <p>After the install script finishes, you should have a working apache zookeeper installation.</p>
-          <p>This script does not yet automatically install Kafka, so we recommend following an installation tutorial, such as <link href=https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04 rel=this one>, if you are not already familiar.</p></div><br><br>
+          <p>This script does not yet automatically install Kafka, so we recommend following an installation tutorial, such as <link href=https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04 rel=this one>, if you are not already familiar.</p>
 
 
 
-          <div class="main"><h2>Configuration Files</h2>
+          <h2>Configuration Files</h2>
 
 
 
@@ -150,25 +140,30 @@ DatabasePassword: 123456,
 DatabaseHost: 127.0.0.1,
 DatabaseName: bgdb
 }</code></pre></p>   
-</div><br><br>
 
 
-          <div class="main"><h2>Setting Up MySQL</h2>
+
+          <h2>Setting Up MySQL</h2>
           <link rel=How To Install MySQL on Ubuntu 20.04 | DigitalOcean href=https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04>
 
           <p>The recommended setup is to have a local instance of MySQL to run while coding in the local environment. Download MySQL Workbench, MySQL Server, and Connector/Python. The installer is found here: <link rel=MySQL:: Download MySQL Installer href=https://dev.mysql.com/downloads/installer/ >, then install the parts. Once connected to the local database via the Workbench, the Database/GenerateBrianDb.sql file in the code will set up the new database, tables, etc. Paste it into Workbench and run the entire file.
-			  <p></div><br><br>
-          
-<div class="main"><h2>Testing</h2>
+<p>
+          <h2>Testing</h2>
           <p>After your environment is configured, you can now test your system by executing the following command from within the BrainGenix/System directory:</p>
-	<p><pre><code class="language-bash">python3 Main.py</code></pre></p></div><br><br>
+          <p><pre><code class="language-bash">python3 Main.py</code></pre></p>
 
-          <div class="main"><p>If you encounter any errors, then you will need to resolve each issue. If you are stuck, please feel free to contact us by email or open an issue on GitHub <a href="mailto:braingenix@carboncopies.org" style="text-decoration: underline;">here</a>.</p></div>
-	
-	</div><br><br><br><br>
+          <p>If you encounter any errors, then you will need to resolve each issue. If you are stuck, please feel free to contact us by email or open an issue on GitHub <a href="mailto:braingenix@carboncopies.org">here</a> or open an issue on github <a href="https://github.com/carboncopies/BrainGenix/issues">here</a>.</p>
 
-	<div class="footer">
-	<p>BrainGenix&nbsp; /&nbsp; &copy; 2021 Carboncopies Foundation&nbsp; / &nbsp;<a href="https://www.olneypianostudio.com/hannah/bg/privacy/index.html">Privacy Policy</a></div> <br><br><br>
-
-</body>
+        </div>
+        <footer class="texture">
+          <div class="site-info">
+            <p class="footer-branding">
+              <a href="../index.html"><img src="../Assets/Images/footer-logo.svg" />  BrainGenix</a></p>
+            <p class="footer-info"><a href="../image-credits/index.html">Image Credits</a> | <a href="../privacy/index.html">Privacy Policy</a> | &copy; <script>document.write(new Date().getFullYear());</script> <a href="https://carboncopies.org/">Carboncopies Foundation</a></p>
+          </div>
+          <script src="../Assets/JS/prism.js"></script>
+          <script src="https://unpkg.com/behemoth-ui@1.0.0/behemoth-lib.js"></script>
+          <script src="../scripts.js"></script>
+        </footer>
+    </body>
 </html>
