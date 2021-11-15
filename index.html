@@ -1,146 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <html>
-    <head>
-        <title>Home - The BrainGenix Project</title>
-        <!-- FAVICON          -->
-        <link rel="icon" href="Assets/Images/wbe-process.svg">
-        
-        <!-- GOOGLE FONTS     -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        
-        <!-- START META INFO  -->
-        <link rel="canonical" href="#" />
-      	<meta property="og:locale" content="en_US" />
-      	<meta property="og:type" content="website" />
-      	<meta property="og:title" content="The BrainGenix Project" />
-      	<meta property="og:url" content="#" />
-      	<meta property="og:site_name" content="The BrainGenix Project" />
-      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-      	<!-- END META INFO    -->
-      	        
-        <!-- CSS              -->
-        <link rel="stylesheet" href="normalize.css" />
-        <link rel="stylesheet" href="https://unpkg.com/behemoth-ui@1.0.0/behemoth-lib.css" />
-        <link rel="stylesheet" href="style.css" />
-      	
-      	<!-- FONTAWESOME      -->
-      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    </head>
-    <body>
-        <nav>
-          <a href="index.html" class="header-logo-link"><img src="Assets/Images/header-logo.svg" class="header-logo" />BrainGenix</a>
-          <ul>
-            <li><a href="installation/index.html">Installation</a></li>
-            <li><a href="documentation/index.html">Documentation</a></li>
-          </ul>
-          <a href="https://github.com/carboncopies/BrainGenix" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
-          <div class='b-hamburger smooth'>
-            <div class='b-ham-inner'></div>
-            <div class='b-ham-inner'></div>
-            <div class='b-ham-inner'></div>
-          </div>
-        </nav>
-        <div id="content" class="hero-landing">
-          <img src="Assets/Images/hero-blob.svg" id="hero-blob" />
-          <article>
-            <div class="column">
-              <h1>BrainGenix</h1>
-              <p class="subtitle">A scalable and distributed neuron simulation system for Whole Brain Emulation</p>  
-              <div class="callout-card">
-                <h2>Note: This project is still in alpha!</h2>
-                <hr/>
-                <p>Development of BrainGenix began in 2018 with a Herculean goal of driving state of the art in WBE. With such a major task ahead of us, we want to be clear that the software is not yet  ready. If you're interested in helping with our project, then please contact us with your skills and interest</p>
-                <a href="https://carboncopies.org/Openings" class="callout-button">Get Started</a>
-              </div>
-            </div>
-            <div class="column">
-              <img src="Assets/Images/wbe-process.svg" id="wbe-process" />
-            </div>
-          </article>
-        </div>
-        <div id="why" class="section">
-          <h2>Why BrainGenix?</h2>
-          <div class="reason">
-            <img src="Assets/Images/Scalable.svg" class="reason-icon" />
-            <div class="reason-content">
-              <h3>Scalable by Design</h3>
-              <p>An architecture for implementations scalable from a single Raspberry Pi to a large data center with simulations as large as 100 billion neurons.</p>
-            </div>
-          </div>
-          <div class="reason">
-            <img src="Assets/Images/Fault-Tolerant.svg" class="reason-icon" />
-            <div class="reason-content">
-              <h3>Fault Tolerant</h3>
-              <p>Periodic database storage and automatic node reassignment upon fault detection by leveraging the Zookeeper Election system.</p>
-            </div>
-          </div>
-          <div class="reason">
-            <img src="Assets/Images/User-Interface.svg" class="reason-icon" />
-            <div class="reason-content">
-              <h3>Simple User Interface</h3>
-              <p>Easy simulation configuration using a neuron connectivity tool with viewable results through an interactive 3D editor.</p>
-            </div>
-          </div>
-          <div class="reason">
-            <img src="Assets/Images/Security.svg" class="reason-icon" />
-            <div class="reason-content">
-              <h3>Security</h3>
-              <p>Proven TLS/SSL encryption between nodes and a robust ACL system for restricting access to authorized users.</p>
-            </div>
-          </div>
-          <div class="reason">
-            <img src="Assets/Images/Backend.svg" class="reason-icon" />
-            <div class="reason-content">
-              <h3>Backend</h3>
-              <p>Simulation engine based on distributions across many instances of the popular Brian simulator.</p>
-            </div>
-          </div>
-        </div>
-        <div id="getting-started" class="section texture">
-          <h2>Getting Started</h2>
-          <div class="card">
-            <h3>Installation</h3>
-            <p>Our simple tutorial helps you dive into BrainGenix, and covers basic setup and configuration for those who have two or more computers available for installation.</p>
-            <div class="button-cont">
-              <a href="installation/index.html" target="_blank" class="card-button">Tutorial</a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Documentation</h3>
-            <p>Learn how to integrate the API into your system or how to leverage the advanced 3D interactive editor.</p>
-            <div class="button-cont">
-              <a href="documentation/index.html" target="_blank" class="card-button">Docs</a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Contribution</h3>
-            <p>If you would like to support the BrainGenix project, please consider contributing code or a financial donation to the Carboncopies foundation.</p>
-            <div class="button-cont">
-              <a href="https://github.com/carboncopies/BrainGenix/" class="card-button">GitHub</a>
-              <a href="https://carboncopies.org/donate/" class="card-button">Donate</a>
-            </div>
-          </div>
-        </div>
-        <div id="further-reading" class="section">
-          <h2>Further Reading</h2>
-          <div class="card">
-            <h3>What is Whole Brain Emulation?</h3>
-            <p>Learn more about whole brain emulation and mind uploading through our parent organization, the Carboncopies Foundation. We are dedicated to seeing an expedited future towards the safe development of WBE.</p>
-            <div class="button-cont">
-              <a href="https://carboncopies.org/" class="card-button">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <footer class="texture">
-          <div class="site-info">
-            <p class="footer-branding">
-              <a href="#"><img src="Assets/Images/footer-logo.svg" />  BrainGenix</a></p>
-            <p class="footer-info"><a href="image-credits/index.html">Image Credits</a> | <a href="privacy/index.html">Privacy Policy</a> | &copy; <script>document.write(new Date().getFullYear());</script> <a href="https://carboncopies.org/">Carboncopies Foundation</a></p>
-          </div>
-          <script src="https://unpkg.com/behemoth-ui@1.0.0/behemoth-lib.js"></script>
-          <script src="scripts.js"></script>
-        </footer>
-    </body>
-</html>
+<head>
+<title>BrainGenix</title>
+<link rel="stylesheet" href="http://www.olneypianostudio.com/hannah/bg/gradient.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" href="http://www.olneypianostudio.com/hannah/bg/main.css">
+<link rel="stylesheet" media="screen and (max-device-width: 800px)" href="http://www.olneypianostudio.com/hannah/bg/mobile.css">
+</head>
+
+<body>
+
+<div class="header">
+<a href="http://www.olneypianostudio.com/hannah/bg/">
+	<img src="http://olneypianostudio.com/hannah/bg/graphics/BG-Horizontal.png" height="87.75" width="400"></a>
+	<div class="nav">
+		<h3>
+		<a href="/hannah/bg/about/index.html">ABOUT&nbsp;&nbsp;</a>
+		
+<div class="dropdown">
+  <div class="dropbtn"><a href="#">
+	  PROJECTS&nbsp;&nbsp;</a>
+	</div><div class="dropdown-content">
+    <a href="/hannah/bg/projects/ui/index.html">UI</a>
+    <a href="/hannah/bg/projects/api/index.html">API</a>
+    <a href="/hannah/bg/projects/nes/index.html">NES</a>
+	<a href="/hannah/bg/projects/ers/index.html">ERS</a>
+	<a href="/hannah/bg/projects/sts/index.html">STS</a></div></div> 
+		
+		<a href="/hannah/bg/installation/index.html">INSTALLATION&nbsp;&nbsp;</a> 
+		<a href="/hannah/bg/documentation/index.html">DOCUMENTATION</a></h3></div>
+	</div>
+		
+	
+	<div class="mobile-nav" style="margin-top:-125px;">
+			
+<div class="mobile-dropdown" onclick="toggle_visibility()" style="width:90px;margin-left:850px;"><h3>
+  <i class="fa fa-bars" aria-hidden="true" style="color:#B8B8B8;font-size:60px;margin-left:20px;"></i>
+	  <br>
+	<div id="mobile-dropdown-content" style="display:none;margin-left:-220px;"><br>
+    <a href="/hannah/bg/about/index.html">ABOUT</a><br><br><br>
+    <a href="/hannah/bg/projects/index.html">PROJECTS</a><br><br><br>
+    <a href="/hannah/bg/installation/index.html">INSTALLATION</a><br><br><br>
+	<a href="/hannah/bg/documentation/index.html">DOCUMENTATION</a><br><br></div> 
+	</h3></div></div>
+		
+		<script type="text/javascript">
+    function toggle_visibility() 
+    {
+        var e = document.getElementById('mobile-dropdown-content');
+        if ( e.style.display == 'block' )
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+    }
+</script>
+
+<div class="graphic">
+	<img src="http://olneypianostudio.com/hannah/bg/graphics/diffusion.jpg" width="100%">
+</div>
+	
+<div class="main"><br><br><br>
+	<h1 align="center">WHAT IS BRAINGENIX?</h1><br>
+	<div class="intro"><p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisi dui, ultrices eget ex semper, lobortis efficitur purus. Duis a dignissim tortor. Duis condimentum metus sed eros bibendum, eu sollicitudin nibh ornare. Aenean fringilla sodales felis sed interdum. Aliquam placerat ex non facilisis euismod. Sed tortor risus, maximus at orci non, convallis rhoncus lectus. In massa metus, laoreet id dolor at, tincidunt tempus odio. Ut vel efficitur nulla. Cras eget egestas mi. Sed euismod quam odio. Phasellus facilisis ante in pharetra porta. Ut sed porttitor sapien. Quisque sem urna, venenatis ut metus eu, condimentum viverra.</p><br>
+		 <a href="https://braingenix.org/installation/index.html"><button class="about">Learn More</button></a><br><br><br></div>
+	</div><br><br><br><br>
+	
+	<div class="icon-mobile" align="center"><br><br><br>
+<div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/scalable.png" width="150">
+	<h3>SCALABLE BY DESIGN</h3>
+	<p>An architecture for implementations scalable from a single Raspberry Pi to a large data center with simulations as large as 100 billion neurons.</p></div><br><br>
+	
+	<div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/fault.png" width="150">
+	<h3>FAULT TOLERANT</h3>
+	<p>Periodic database storage and automatic node reassignment upon fault detection by leveraging the Zookeeper Election system.</p></div><br><br>
+	
+	<div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/simple.png" width="150">
+	<h3>SIMPLE USER INTERFACE</h3>
+	<p>Easy simulation configuration using a neuron connectivity tool with viewable results through an interactive 3D editor.</p></div><br><br>
+	
+	<div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/secure.png" width="150">
+	<h3>SECURE</h3>
+	<p>Proven TLS/SSL encryption between nodes and a robust ACL system for restricting access to authorized users.</p></div><br><br>
+	
+	<div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/backend.png" width="150">
+	<h3>BACKEND</h3>
+	<p>Simulation engine based on distributions across many instances of the popular Brian simulator.</p><br><br><br></div></div>
+	
+<div align="center" style="width:100%;">
+	<table><tr style="vertical-align:top;"><td>
+<div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/scalable.png" width="100">
+	<h3>SCALABLE BY DESIGN</h3>
+	<p>An architecture for implementations scalable from a single Raspberry Pi to a large data center with simulations as large as 100 billion neurons.</p></div></td>
+	
+	<td><div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/fault.png" width="100">
+	<h3>FAULT TOLERANT</h3>
+	<p>Periodic database storage and automatic node reassignment upon fault detection by leveraging the Zookeeper Election system.</p></div></td>
+	
+	<td><div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/simple.png" width="100">
+	<h3>SIMPLE USER INTERFACE</h3>
+	<p>Easy simulation configuration using a neuron connectivity tool with viewable results through an interactive 3D editor.</p></div></td>
+	
+	<td><div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/secure.png" width="100">
+	<h3>SECURE</h3>
+	<p>Proven TLS/SSL encryption between nodes and a robust ACL system for restricting access to authorized users.</p></div></td>
+	
+	<td><div class="icon-text">
+		<img src="http://www.olneypianostudio.com/hannah/bg/graphics/backend.png" width="100">
+	<h3>BACKEND</h3>
+	<p>Simulation engine based on distributions across many instances of the popular Brian simulator.</p></div></td>
+		</tr></table></div>
+	
+	<br>
+
+<div class="function"><br><br><br>
+	<h1 align="center">FUNCTIONALITY</h1><br>
+	<div class="intro" align="center">
+		<div class="function-image"><img src="http://www.olneypianostudio.com/hannah/bg/graphics/functionality-6.png" width="600px"><br>
+			<br><br><br></div>
+		
+	<div class="function-image-mobile"><img src="http://www.olneypianostudio.com/hannah/bg/graphics/functionality-mobile2.png" width="900px"><br>
+			<br><br><br></div>
+		
+	</div>
+	</div><br><br>
+	
+	<div align="center" style="width:100%">
+        <table>
+            <tr>
+                <td style="width:300px">
+                    <div class="gradient">
+                        <h2 style="color:white;">Installation</h2>
+                        <p style="color:white;font-size: 14px;">Our simple tutorial helps you dive into BrainGenix, and covers basic setup and configuration for those who have two or more computers available for installation.</p><br>
+                        <a href="https://braingenix.org/installation/index.html"><button class="tutorial">Tutorial</button></a>
+                    </div>
+                </td>
+                <td style="width:300px">
+                    <div class="gradient">
+                        <h2 style="color:white;">Documentation</h2>
+                        <p style="color:white;font-size: 14px;">
+                            Learn how to integrate the API into your system or how to leverage the advanced 3D interactive editor.<br>
+                            <a href="https://braingenix.org/installation/index.html"><button class="tutorial" style="margin-top:90px;">Learn Here</button></a>
+                    </div>
+
+                </td>
+                <td style="width:300px">
+                    <div class="gradient">
+                        <h2 style="color:white;">Contribution</h2>
+                        <p style="color:white;font-size: 14px;">If you would like to support the BrainGenix project, please consider contributing code or a financial donation to the Carboncopies foundation.</p>
+                        <button class="tutorial" style="margin-top:47px;"><a href="https://github.com/carboncopies/BrainGenix/" style="color:white;">GitHub</a> / <a href="https://carboncopies.org/donate/" style="color:white;">Donate</a></button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div><br><br><br>
+	
+	<div class="gradient-mobile" align="center">
+                    <div class="gradient-horizontal">
+                        <h2 style="color:white;font-size: 30px;">Installation</h2>
+                        <p style="color:white;">Our simple tutorial helps you dive into BrainGenix, and covers basic setup and configuration for those who have two or more computers available for installation.</p><br>
+	<a href="/hannah/bg/installation/index.html"><button class="mobile-button" align="center">Tutorial</button></a>
+						<br><br>
+                    </div>
+                    <div class="gradient-horizontal">
+                        <h2 style="color:white;font-size: 30px;">Documentation</h2>
+                        <p style="color:white;">Learn how to integrate the API into your system or how to leverage the advanced 3D interactive editor.</p><br>
+	<a href="/hannah/bg/installation/index.html"><button class="mobile-button" align="center">Tutorial</button></a>
+						<br><br>
+                    </div>
+
+                    <div class="gradient-horizontal">
+                        <h2 style="color:white;font-size: 30px;">Contribution</h2>
+                        <p style="color:white;">If you would like to support the BrainGenix project, please consider contributing code or a financial donation to the Carboncopies foundation.</p>
+	<a href="https://braingenix.org/installation/index.html"><button class="mobile-button" align="center">Tutorial</button></a>
+						<br><br>
+                    </div><br><br><br><br><br><br><br></div>
+	
+	<div class="main"><br><br><br>
+		<h1 align="center">FURTHER READING</h1><h3>What is Whole Brain Emulation?</h3><br>
+	<div class="wbe"><p align="center">Learn more about whole brain emulation and mind uploading through our parent organization, the Carboncopies Foundation. We are dedicated to seeing an expedited future towards the safe development of WBE.</p><br>
+		 <a href="https://braingenix.org/installation/index.html"><button class="about">Learn More</button></a><br><br><br></div>
+	</div><br><br><br><br>
+	
+	<div class="footer">
+	<p>BrainGenix&nbsp; /&nbsp; &copy; 2021 Carboncopies Foundation&nbsp; / &nbsp;<a href="/hannah/bg/privacy/index.html">Privacy Policy</a></div> <br><br><br>
+
+</body>
+</html> 
