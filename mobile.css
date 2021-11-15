@@ -1,0 +1,168 @@
+body {
+font-family: Helvetica, sans-serif;
+background-color:black;
+overflow-x:hidden;
+}
+	
+::selection {
+	background-color: #8244d0;
+	}
+
+.header {
+background-color:black;
+width:100%;
+height:100px;
+padding:20px;
+}
+
+.graphic {
+width:100%;
+max-height:680px;
+overflow: hidden;
+}
+	
+h3 {
+color:#B8B8B8;
+font-size: 30px;
+	}
+
+h2 {
+color: #B8B8B8;
+letter-spacing:1px;
+font-size: 30px;
+	}
+	
+p {
+color: #B8B8B8;
+letter-spacing:1px;
+line-height:40px;
+font-size: 25px;
+	}
+	
+h1 {
+color:#B8B8B8; 
+letter-spacing:2px;
+	}
+
+h2 {
+color:#B8B8B8; 
+letter-spacing:2px;
+	}
+	
+a {
+text-decoration:none;
+color:#B8B8B8;
+cursor:pointer;
+	}
+	
+a:hover {
+color: #008037;
+	}
+	
+	.intro {
+width:80%;
+margin-left:auto;
+margin-right:auto;
+	}
+	
+	.main {
+width:100%;
+padding:20px;
+margin-right:10px;
+margin-left:0px;
+text-align:center;
+background-color:#282828;
+	}
+	
+ .about {
+            border: none;
+            color: #B8B8B8;
+            background-color: #484848;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 30px;
+            padding: 9px 30px;
+            cursor: pointer;
+        }
+	
+.icon-mobile {
+	width: 100%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.icon-text {
+	width:70%;
+	margin-bottom:20px;
+	text-align:center;
+	display:block;
+	}
+	
+	.wbe {
+width:80%;
+margin-left:auto;
+margin-right:auto;
+	}
+
+.function {
+width:100%;
+overflow:hidden;
+margin-left:auto;
+}
+
+.function-image {
+	display:none;
+}
+
+.function-image-mobile {
+	margin-left:-40px;
+}
+
+table {
+	display:none;
+}
+	
+	\\dropdown menu
+
+	.mobile-nav {
+		float:left;
+}
+	
+	#mobile-dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.mobile-dropdown {
+	display:inline-block;
+}
+
+#mobile-dropdown-content {
+  color:white;
+  display: none;
+  padding:20px;
+  margin-top:20px;
+  background-color: #484848;
+  position:absolute;
+  width:270px;
+  z-index:1;
+}
+
+.mobile-dropdown-content a {
+  color: #B8B8B8;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav {
+  display: none;
+  width: 0px;
+}
+
+.footer {
+font-size:11px;
+}
