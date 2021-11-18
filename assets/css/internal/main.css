@@ -1,7 +1,9 @@
-body {
+html, body {
 font-family: Helvetica, sans-serif;
 background-color:black;
 overflow-x:hidden;
+padding: 0;
+margin: 0;
 }
 	
 ::selection {
@@ -13,6 +15,8 @@ background-color: #101010;
 width:100%;
 height:100px;
 padding:20px;
+padding: 0;
+margin: 0;
 }
 
 .graphic {
