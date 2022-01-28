@@ -5,6 +5,7 @@ body {
         .gradient {
             height: 340px;
             width: 200px;
+            position: relative;
             padding: 20px;
             border-radius: 25px;
             text-align: center;
@@ -43,28 +44,32 @@ body {
 			line-height:10px;
         }
 
-        .tutorial {
-            border: none;
-            color: white;
-            background-color: #888888;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 10px;
-            display: inline-block;
-            font-size: 16px;
-            padding: 9px 20px;
-            cursor: pointer;
-        }
+.button-gradient {
+    position: absolute;
+    white-space: nowrap;
+    bottom: 10%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: #888888;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 9px 20px;
+    cursor: pointer;
+    border: none;
+}
 
- .mobile-button {
-            border: none;
-            color: white;
-            background-color: #888888;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 10px;
-            display: inline-block;
-            font-size: 30px;
-            padding: 9px 30px;
-            cursor: pointer;
-        }
+.mobile-button {
+    border: none;
+    color: white;
+    background-color: #888888;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 30px;
+    padding: 9px 30px;
+    cursor: pointer;
+}
