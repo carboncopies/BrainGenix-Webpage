@@ -62,7 +62,10 @@ body {
 }
 
 .mobile-button {
-    border: none;
+    position: absolute;
+    white-space: nowrap;
+    bottom: 10%;
+    transform: translateX(-50%);
     color: white;
     background-color: #888888;
     text-align: center;
@@ -70,6 +73,7 @@ body {
     border-radius: 10px;
     display: inline-block;
     font-size: 30px;
-    padding: 9px 30px;
+    padding: 9px 20px;
     cursor: pointer;
+    border: none;
 }
