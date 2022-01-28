@@ -1,14 +1,16 @@
 html, body {
-  font-family: Helvetica, sans-serif;
+  font-family: 
+    Helvetica,
+    sans-serif;
   background-color:black;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
-	
+
 ::selection {
 	background-color: #8244d0;
-	}
+}
 
 .header {
   background-color: #101010;
@@ -23,38 +25,38 @@ html, body {
   max-height: 680px;
   overflow: hidden;
 }
-	
+
 h3 {
   color: #B8B8B8;
 }
-	
+
 p {
   color: #B8B8B8;
   letter-spacing: 1px;
   line-height: 30px;
 }
-	
+
 h1 {
-  color: #B8B8B8; 
+  color: #B8B8B8;
   letter-spacing: 2px;
 }
 
 h2 {
-  color: #B8B8B8; 
+  color: #B8B8B8;
   letter-spacing: 2px;
 }
-	
+
 a {
   text-decoration: none;
   color:#B8B8B8;
   cursor: pointer;
 }
-	
+
 a:hover {
   color: #008037;
 }
-	
-	
+
+
 .nav {
   margin-top: -70px;
   margin-left: 600px;
@@ -77,13 +79,13 @@ a:hover {
 .mobile-dropdown-content {
   display: none;
 }
-	
+
 .intro {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
-	
+
 .main {
   width: 100%;
   padding: 20px;
@@ -120,7 +122,7 @@ a:hover {
 .gradient-mobile {
 	display: none;
 }
-	
+
 .wbe {
   width: 45%;
   margin-left: auto;
@@ -130,7 +132,7 @@ a:hover {
 .function-image-mobile {
 	display: none;
 }
-	
+
 .dropbtn {
   color: white;
   padding: 16px;
