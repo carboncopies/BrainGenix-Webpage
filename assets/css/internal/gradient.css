@@ -13,11 +13,11 @@ body {
   margin: 10px;
   background-color: #a776a7;
   background-image: linear-gradient(to bottom left, #8244d0, #008037);
-  line-height:15px;
+  line-height: 15px;
 }
 
 .gradient-mobile {
-	width:100%;
+	width: 100%;
 }
 
 .gradient-horizontal {
@@ -41,7 +41,7 @@ h2 {
 p {
   text-align: center;
   letter-spacing: 1px;
-  line-height:10px;
+  line-height: 10px;
 }
 
 .button-gradient {
