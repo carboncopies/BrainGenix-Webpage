@@ -1,7 +1,9 @@
-body {
-font-family: Helvetica, sans-serif;
-background-color:black;
-overflow-x:hidden;
+html, body {
+	font-family: Helvetica, sans-serif;
+	background-color:black;
+	overflow-x:hidden;
+	padding: 0;
+	margin: 0;
 }
 	
 ::selection {
