@@ -22,7 +22,7 @@ html body {
   max-height: 680px;
   overflow: hidden;
 }
-  
+
 h3 {
   color: #b8b8b8;
   font-size: 30px;
@@ -30,7 +30,7 @@ h3 {
 
 h2 {
   color: #b8b8b8;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 30px;
 }
   
@@ -42,18 +42,13 @@ p {
 }
   
 h1 {
-  color:#b8b8b8;
-  letter-spacing:2px;
-}
-
-h2 {
-  color: #b8b8b8; 
+  color: #b8b8b8;
   letter-spacing: 2px;
 }
   
 a {
   text-decoration: none;
-  color:#b8b8b8;
+  color: #b8b8b8;
   cursor:pointer;
 }
   
