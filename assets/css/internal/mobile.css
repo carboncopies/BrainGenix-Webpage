@@ -1,4 +1,4 @@
-html, body {
+html body {
   font-family: Helvetica, sans-serif;
   background-color: black;
   overflow-x: hidden;
@@ -24,36 +24,36 @@ html, body {
 }
   
 h3 {
-  color: #B8B8B8;
+  color: #b8b8b8;
   font-size: 30px;
 }
 
 h2 {
-  color: #B8B8B8;
+  color: #b8b8b8;
   letter-spacing: 1px;
   font-size: 30px;
 }
   
 p {
-  color: #B8B8B8;
+  color: #b8b8b8;
   letter-spacing: 1px;
   line-height: 40px;
   font-size: 25px;
 }
   
 h1 {
-  color:#B8B8B8; 
+  color:#b8b8b8; 
   letter-spacing:2px;;
 }
 
 h2 {
-  color: #B8B8B8; 
+  color: #b8b8b8; 
   letter-spacing: 2px;
 }
   
 a {
   text-decoration: none;
-  color:#B8B8B8;
+  color:#b8b8b8;
   cursor:pointer;
 }
   
@@ -78,7 +78,7 @@ a:hover {
   
 .about {
   border: none;
-  color: #B8B8B8;
+  color: #b8b8b8;
   background-color: #484848;
   text-align: center;
   text-decoration: none;
@@ -152,7 +152,7 @@ table {
 }
 
 .mobile-dropdown-content a {
-  color: #B8B8B8;
+  color: #b8b8b8;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
