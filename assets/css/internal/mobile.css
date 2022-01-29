@@ -33,7 +33,7 @@ h2 {
   letter-spacing: 2px;
   font-size: 30px;
 }
-  
+
 p {
   color: #b8b8b8;
   letter-spacing: 1px;
@@ -49,7 +49,7 @@ h1 {
 a {
   text-decoration: none;
   color: #b8b8b8;
-  cursor:pointer;
+  cursor: pointer;
 }
   
 a:hover {
@@ -57,9 +57,9 @@ a:hover {
 }
   
 .intro {
-  width:80%;
-  margin-left:auto;
-  margin-right:auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
   
 .main {
@@ -95,7 +95,7 @@ a:hover {
   margin-bottom: 20px;
   text-align: center;
   display: block;
-  }
+}
   
 .wbe {
   width: 80%;
@@ -105,24 +105,24 @@ a:hover {
 
 .function {
   width: 100%;
-  overflow:hidden;
-  margin-left:auto;
+  overflow: hidden;
+  margin-left: auto;
 }
 
 .function-image {
-  display:none;
+  display: none;
 }
 
 .function-image-mobile {
-  margin-left:-40px;
+  margin-left: -40px;
 }
 
 table {
-  display:none;
+  display: none;
 }
 
 .mobile-nav {
-    float:left;
+  float: left;
 }
   
 #mobile-dropbtn {
@@ -132,18 +132,18 @@ table {
 }
 
 .mobile-dropdown {
-  display:inline-block;
+  display: inline-block;
 }
 
 #mobile-dropdown-content {
-  color:white;
+  color: white;
   display: none;
-  padding:20px;
-  margin-top:20px;
+  padding: 20px;
+  margin-top: 20px;
   background-color: #484848;
-  position:absolute;
-  width:270px;
-  z-index:1;
+  position: absolute;
+  width: 270px;
+  z-index: 1;
 }
 
 .mobile-dropdown-content a {
@@ -155,9 +155,9 @@ table {
 
 .nav {
   display: none;
-  width: 0px;
+  width: 0;
 }
 
 .footer {
-font-size:11px;
+  font-size: 11px;
 }
