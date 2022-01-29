@@ -1,10 +1,11 @@
 
 // Toggles Menu Visibility
-function toggle_visibility() 
+function toggleVisibility() 
 {
-    var e = document.getElementById('mobile-dropdown-content');
-    if ( e.style.display == 'block' )
-        e.style.display = 'none';
-    else
-        e.style.display = 'block';
+    var element = document.getElementById("mobile-dropdown-content");
+    if ( element.style.display === "block" ) {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
 }
