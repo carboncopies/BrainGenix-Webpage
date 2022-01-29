@@ -1,5 +1,4 @@
-html,
-body {
+html body {
   font-family: 
     Helvetica,
     sans-serif;
@@ -160,12 +159,10 @@ a:hover {
   display: block;
 }
 
-.dropdown-content,
-a:hover {
+.dropdown-content a:hover {
   background-color: white;
 }
 
-.dropdown:hover,
-.dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
