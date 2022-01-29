@@ -40,7 +40,7 @@ p {
   line-height: 40px;
   font-size: 25px;
 }
-  
+
 h1 {
   color: #b8b8b8;
   letter-spacing: 2px;
@@ -86,8 +86,8 @@ a:hover {
   
 .icon-mobile {
   width: 100%;
-  margin-right:auto;
-  margin-left:auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .icon-text {
@@ -99,8 +99,8 @@ a:hover {
   
 .wbe {
   width: 80%;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .function {
