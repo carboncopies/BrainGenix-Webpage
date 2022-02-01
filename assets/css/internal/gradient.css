@@ -21,7 +21,7 @@ body {
 
 .gradient-horizontal {
   width: 60%;
-  padding: 40px 40px 0 40px;
+  padding: 40px 40px 0 25px;
   border-radius: 20px;
   text-align: center;
   margin-right: auto;
