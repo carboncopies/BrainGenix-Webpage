@@ -22,13 +22,27 @@ body {
 }
 
 .gradient-horizontal {
-  width: 60%;
+  /* width: 60%;
   padding: 40px 40px 0 40px;
   border-radius: 20px;
   text-align: center;
   margin-top: 10px;
   background-color: #8244d0;
+  background-image: linear-gradient(to bottom left, #8244d0, #008037); */
+
+
+  height: 340px;
+  width: 200px;
+  position: relative;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 30px;
+  background-color: #a776a7;
   background-image: linear-gradient(to bottom left, #8244d0, #008037);
+  line-height: 15px;
+
+
 }
 
 h2 {
