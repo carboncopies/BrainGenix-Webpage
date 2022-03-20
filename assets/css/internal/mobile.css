@@ -15,8 +15,6 @@ html body {
   width: 100%;
   height: 100px;
   padding: 20px;
-  position: sticky;
-  top: 0;
 }
 
 .graphic {
