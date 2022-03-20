@@ -18,6 +18,8 @@ html body {
   height: 100px;
   padding: 20px;
   margin: 0;
+  position: sticky;
+  top: 0;
 }
 
 .graphic {
