@@ -24,7 +24,16 @@ html body {
   width: 100%;
   max-height: 680px;
   overflow: hidden;
-  height: 500px;
+}
+
+.div-graphic {
+  width: 100%;
+  max-height: 680px;
+  overflow: hidden;
+}
+
+.mobile-spaces {
+  display: none;
 }
 
 h3 {

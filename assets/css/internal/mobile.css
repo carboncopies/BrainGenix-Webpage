@@ -25,6 +25,10 @@ html body {
   margin-left: 0;
 }
 
+.div-graphic {
+  display: none;
+}
+
 h3 {
   color: #b8b8b8;
   font-size: 30px;
