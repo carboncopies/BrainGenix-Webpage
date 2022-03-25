@@ -1,0 +1,4 @@
+<map id="ERS_CLASS_VisualRenderer" name="ERS_CLASS_VisualRenderer">
+<area shape="rect" id="node1" title="Handles viewport creation/deletion/rendering/updating." alt="" coords="5,95,208,121"/>
+<area shape="rect" id="node2" href="$structERS__STRUCT__SystemUtils.html" title="The System utils struct contains most system utils prepopulated as shared pointers within." alt="" coords="11,5,203,32"/>
+</map>
