@@ -114,6 +114,11 @@ a:hover {
   display: block;
 }
 
+.function-text {
+  right: 2%; 
+  transform: translate(2%);
+}
+
 .wbe {
   width: 80%;
   margin-left: auto;
