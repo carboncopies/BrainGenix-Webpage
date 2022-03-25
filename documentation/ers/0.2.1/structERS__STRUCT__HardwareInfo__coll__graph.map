@@ -1,0 +1,6 @@
+<map id="ERS_STRUCT_HardwareInfo" name="ERS_STRUCT_HardwareInfo">
+<area shape="rect" id="node1" title="This structure is used as a container for static and dynamic hardware info structs." alt="" coords="119,228,321,255"/>
+<area shape="rect" id="node2" href="$structDynamicHardwareInfo.html" title="This structure is used to store dynamically changing hardware information." alt="" coords="5,139,173,165"/>
+<area shape="rect" id="node3" title=" " alt="" coords="64,5,115,32"/>
+<area shape="rect" id="node4" href="$structStaticHardwareInfo.html" title="This structure is used to store static hardware information." alt="" coords="197,139,344,165"/>
+</map>

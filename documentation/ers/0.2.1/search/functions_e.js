@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['saveproject_552',['SaveProject',['../classERS__CLASS__ProjectWriter.html#acbd4192508205a00155e27ae4579d918',1,'ERS_CLASS_ProjectWriter']]],
+  ['scenewriter_553',['SceneWriter',['../classSceneWriter.html#a108bc60a2b6711e3ca9c63cf7ecdaa07',1,'SceneWriter']]],
+  ['setactivescene_554',['SetActiveScene',['../classERS__CLASS__SceneManager.html#ae8ca7caa315f2dfaac069a67f6de7f4e',1,'ERS_CLASS_SceneManager::SetActiveScene(int SceneIndex)'],['../classERS__CLASS__SceneManager.html#a35984d1d3ae5405a80155bcb5eff3ae1',1,'ERS_CLASS_SceneManager::SetActiveScene(std::string TargetSceneName)']]],
+  ['setbool_555',['SetBool',['../structERS__OBJECT__SHADER.html#ac56ad10ad5b9c6ae854c682e1b4a903d',1,'ERS_OBJECT_SHADER']]],
+  ['setfloat_556',['SetFloat',['../structERS__OBJECT__SHADER.html#a0dad62fb46ba260e4db22cd4bd236c8f',1,'ERS_OBJECT_SHADER']]],
+  ['setint_557',['SetInt',['../structERS__OBJECT__SHADER.html#a159bee6d3922a6b0ed68a1af1649cc45',1,'ERS_OBJECT_SHADER']]],
+  ['setlocrotscale_558',['SetLocRotScale',['../classCursors3D.html#a19368c7c1371fe75c782cf1c38e35169',1,'Cursors3D::SetLocRotScale()'],['../structERS__OBJECT__MODEL.html#a558877272858738229085a3fcf763fe4',1,'ERS_OBJECT_MODEL::SetLocRotScale(double LocX, double LocY, double LocZ, double RotX, double RotY, double RotZ, double ScaleX, double ScaleY, double ScaleZ)'],['../structERS__OBJECT__MODEL.html#a15c1b3873f8820057cb68e913acf71f2',1,'ERS_OBJECT_MODEL::SetLocRotScale(glm::vec3 Position, glm::vec3 Rotation, glm::vec3 Scale)']]],
+  ['setmat2_559',['SetMat2',['../structERS__OBJECT__SHADER.html#a69ddba6a443d8c1bfb033a77596b0090',1,'ERS_OBJECT_SHADER']]],
+  ['setmat3_560',['SetMat3',['../structERS__OBJECT__SHADER.html#a598e75d50cf1c5db655751df103c70bc',1,'ERS_OBJECT_SHADER']]],
+  ['setmat4_561',['SetMat4',['../structERS__OBJECT__SHADER.html#a2a0a51fee9f32800a7099cea99ad9583',1,'ERS_OBJECT_SHADER']]],
+  ['setposition_562',['SetPosition',['../structERS__OBJECT__MODEL.html#a55acb83349141290a48fb6b8062a657c',1,'ERS_OBJECT_MODEL::SetPosition(double X, double Y, double Z)'],['../structERS__OBJECT__MODEL.html#a0898df86f735ebf298c9fac166e2b750',1,'ERS_OBJECT_MODEL::SetPosition(glm::vec3 Position)']]],
+  ['setrotation_563',['SetRotation',['../structERS__OBJECT__MODEL.html#ae43b9b6d7c44c4e0b0bdaaeb8e7714a3',1,'ERS_OBJECT_MODEL::SetRotation(double X, double Y, double Z)'],['../structERS__OBJECT__MODEL.html#a3c8dfc5f8210256fdcd2fdb17c23cccd',1,'ERS_OBJECT_MODEL::SetRotation(glm::vec3 Rotation)']]],
+  ['setscale_564',['SetScale',['../structERS__OBJECT__MODEL.html#ac354cc034078e87048c4f6ed32500669',1,'ERS_OBJECT_MODEL::SetScale(double X, double Y, double Z)'],['../structERS__OBJECT__MODEL.html#a05fe392cd3b01a17ab6e5583d9493eda',1,'ERS_OBJECT_MODEL::SetScale(glm::vec3 Scale)']]],
+  ['settargetframerate_565',['SetTargetFramerate',['../classERS__CLASS__FramerateManager.html#a8ac706165b4fefa1ad55c1ceb85d1476',1,'ERS_CLASS_FramerateManager']]],
+  ['setvec2_566',['SetVec2',['../structERS__OBJECT__SHADER.html#a8e85332459e42456a094de8a270a14ac',1,'ERS_OBJECT_SHADER::SetVec2(const std::string &amp;name, const glm::vec2 &amp;value) const'],['../structERS__OBJECT__SHADER.html#af00972c69e549ceee4d5aa02018069c7',1,'ERS_OBJECT_SHADER::SetVec2(const std::string &amp;name, float x, float y) const']]],
+  ['setvec3_567',['SetVec3',['../structERS__OBJECT__SHADER.html#a9bf0ffa04a6f11bac638ad3868e1a3a5',1,'ERS_OBJECT_SHADER::SetVec3(const std::string &amp;name, const glm::vec3 &amp;value) const'],['../structERS__OBJECT__SHADER.html#a6121a5a1c0f67e688906fb202e3183b6',1,'ERS_OBJECT_SHADER::SetVec3(const std::string &amp;name, float x, float y, float z) const']]],
+  ['setvec4_568',['SetVec4',['../structERS__OBJECT__SHADER.html#afd8eebd2e163d6fa497f19bf83948745',1,'ERS_OBJECT_SHADER::SetVec4(const std::string &amp;name, const glm::vec4 &amp;value) const'],['../structERS__OBJECT__SHADER.html#ad858bfb2493f7871c6f7ea0471acecfc',1,'ERS_OBJECT_SHADER::SetVec4(const std::string &amp;name, float x, float y, float z, float w)']]],
+  ['shaderloader_569',['ShaderLoader',['../classShaderLoader.html#acc5f7ae80aa92e3a4cc960ca3fdfc8d9',1,'ShaderLoader']]],
+  ['startframebufferrenderpass_570',['StartFramebufferRenderPass',['../classFramebufferManager.html#ae8c019802b09d8d7b2fc1e2d71f9733f',1,'FramebufferManager']]],
+  ['startnewframe_571',['StartNewFrame',['../classERS__CLASS__FramerateManager.html#ab44dc79cda1a92300480d4c472f0ed9c',1,'ERS_CLASS_FramerateManager']]],
+  ['startscreenrenderpass_572',['StartScreenRenderPass',['../classFramebufferManager.html#ab5bd6fc095faa20d1e06630e667e8dad',1,'FramebufferManager']]],
+  ['subwindow_5fdeletemodel_573',['Subwindow_DeleteModel',['../classSubwindow__DeleteModel.html#a2d2b3337f821f437e7b6aa311b07ccd1',1,'Subwindow_DeleteModel']]],
+  ['subwindow_5fdeletescene_574',['Subwindow_DeleteScene',['../classSubwindow__DeleteScene.html#afe88fd28b4c2052d9207991fffb73693',1,'Subwindow_DeleteScene']]],
+  ['subwindow_5fmodelrenamemodal_575',['Subwindow_ModelRenameModal',['../classSubwindow__ModelRenameModal.html#a09b92f49cdf40e1686eb9fe4e6c5051a',1,'Subwindow_ModelRenameModal']]],
+  ['subwindow_5fscenerenamemodal_576',['Subwindow_SceneRenameModal',['../classSubwindow__SceneRenameModal.html#ae4e5776d072fec8ef2f6f1bfe91f75a1',1,'Subwindow_SceneRenameModal']]]
+];
