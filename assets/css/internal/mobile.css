@@ -68,6 +68,15 @@ a:hover {
   margin-right: auto;
 }
 
+.intro-credits {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  right: -2%; 
+  transform: translate(-2%);
+  text-align: center;
+}
+
 .main {
   width: 100%;
   padding: 20px;

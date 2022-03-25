@@ -104,6 +104,12 @@ a:hover {
   background-color: #282828;
 }
 
+.intro-credits {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about {
   border: none;
   color: #b8b8b8;
